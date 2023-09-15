@@ -1,0 +1,44 @@
+#app > header {
+  font-size: 1.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#app > header > nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+#app > header > nav > ul li {
+  list-style: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+#app > header > button {
+  padding: 1rem 1.4rem;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background: #ff5b50;
+    color: white;
+  }
+}
