@@ -1,0 +1,66 @@
+#informations {
+  display: flex;
+  align-items: center;
+  margin-block: 7rem;
+
+  border-bottom: 1px solid #5a5757;
+}
+
+#informations .ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7rem;
+  padding-inline: 7rem;
+
+  align-items: center;
+
+  font-weight: 600;
+}
+
+#informations .ratings > p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: 5rem;
+}
+
+#informations .ratings > p > span {
+  color: #5a5757;
+  font-size: 2rem;
+  text-transform: none;
+}
+
+#grid-informations {
+  display: grid;
+  grid-template-areas:
+    "tsection tsection"
+    "banner banner";
+  gap: 7rem 12rem;
+  border-left: 1px solid #5a5757;
+}
+
+#grid-informations .text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+  padding-inline: 6rem;
+}
+
+#grid-informations .text-section p {
+  font-size: 1.8rem;
+  line-height: 140%;
+
+  & > span {
+    color: #ff5b50;
+    text-decoration-line: underline;
+  }
+}
+
+#grid-informations img {
+  max-width: 100%;
+  grid-area: banner;
+}
