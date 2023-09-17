@@ -1,0 +1,64 @@
+#best {
+  margin-block: 15rem;
+  text-align: center;
+  padding-inline: 5rem;
+}
+
+#best > h2 {
+  font-size: 5rem;
+  margin-bottom: 12rem;
+
+  & > span {
+    color: #ff5b50;
+  }
+}
+
+#best-artists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 11rem;
+}
+
+#best-artists .artist-card {
+  background: #252525;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 2.5rem 3.2rem;
+}
+
+#best-artists .artist-card .artist-info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#best-artists .artist-card .artist-info span {
+  color: #ff5b50;
+}
+
+#best button {
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 6rem auto;
+
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+    color: #ff5b50;
+  }
+
+  & > i {
+    color: #ff5b50;
+  }
+}
