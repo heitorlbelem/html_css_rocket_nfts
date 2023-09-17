@@ -1,7 +1,7 @@
 #informations {
   display: flex;
   align-items: center;
-  margin-block: 7rem;
+  margin-bottom: 7rem;
 
   border-bottom: 1px solid #5a5757;
 }
@@ -39,8 +39,9 @@
   grid-template-areas:
     "tsection tsection"
     "banner banner";
-  gap: 7rem 12rem;
+  row-gap: 7rem;
   border-left: 1px solid #5a5757;
+  padding-top: 8rem;
 }
 
 #grid-informations .text-section {
