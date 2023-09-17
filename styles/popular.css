@@ -1,0 +1,74 @@
+#popular {
+  display: flex;
+  flex-direction: column;
+
+  padding-inline: 5rem;
+  margin-bottom: 5rem;
+}
+
+#popular > h2 {
+  font-size: 5rem;
+  margin: 6rem 0 10rem;
+
+  & > span {
+    color: #ff5b50;
+  }
+}
+
+#artists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 8rem;
+
+  position: relative;
+}
+
+#artists::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  height: 95%;
+
+  border: 1px solid #5a5757;
+}
+
+.artist {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 34rem;
+}
+
+#artists > .artist:nth-child(even) {
+  justify-self: flex-end;
+}
+
+.artist > h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 3rem;
+  font-weight: 500;
+
+  & > i {
+    font-size: 3.5rem;
+  }
+}
+
+.artist > p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #5a5757;
+  font-size: 2rem;
+  font-weight: 600;
+
+  & > span {
+    color: #ff5b50;
+    font-weight: 400;
+  }
+}
